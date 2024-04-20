@@ -1,0 +1,124 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.bg {
+    width: 100%;
+    /* height: 100vh; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.512),rgba(0, 0, 0, 0.54)),url(bg\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+.heading {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#name li{
+    color:rgb(167, 180, 22);
+    background: none;
+    text-decoration: underline;
+    font-size: 90px;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    display: inline-block;
+}
+#name li:hover {
+    color: #c0b6b4;
+}
+#head_2nd li{
+    list-style: none;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+#head_2nd li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+#head_2nd li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+#head_2nd li:hover::after {
+    width: 100%;
+}
+#head_2nd img {
+    width: 22px;
+}
+#product {
+    margin: 100px 200px;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#product div  {
+    background-color: #929185;
+    width: 300px;
+    height: 480px;
+    /* border: 15px solid green; */
+    border-radius: 30px;
+    padding: 50px;
+    margin: 20px;
+}
+#product div:hover {
+    /* transform: scale(1.03); */
+    box-shadow: 5px 5px 5px #bca9a9;
+
+}
+#product img {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#product span {
+    font-size: 30px;
+    color:white;
+}
+/* #product span:hover {
+    font-size: 31px;
+    color:rgba(57, 65, 230, 0.665);
+} */
+#product nav {
+    color : red;
+    margin: 8px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: start;
+
+}
+#product button {
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(28, 128, 28);
+    cursor: pointer;
+    border-radius: 8px;
+    /* display: block; */
+    transition: 0.2s;
+}
+#product button:hover {
+    transform: scale(1.08);
+}
+#product a {
+    font-size: 30px;
+    color:white;
+    text-decoration: none;
+}
