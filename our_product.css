@@ -64,6 +64,7 @@
 }
 #product {
     margin: 100px 200px;
+    margin-top:0px;
     /* display: flex;
     justify-content: space-between; */
     display: grid;
@@ -112,13 +113,40 @@
     cursor: pointer;
     border-radius: 8px;
     /* display: block; */
-    transition: 0.2s;
+    transition: 0.5s;
 }
 #product button:hover {
     transform: scale(1.08);
+    /* background:  white; */
+    /* color:black; */
 }
 #product a {
     font-size: 30px;
     color:white;
     text-decoration: none;
+}
+#segment {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 120px ;
+}
+#segment button {
+    border-radius: 40px;
+    width: 550px;
+    height: 150px;
+    padding: 5px;
+    margin: 100px;
+    margin-right:190px;
+    background: hsl(44, 88%, 66%);
+    transition: 0.5s;
+}
+#segment a{
+    font-size: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+#segment button:hover {
+    background:rgba(254, 201, 154, 0.329);
+    transform: scale(1.08);
 }
